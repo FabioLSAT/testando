@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Usuário</title>
+
+    <link rel="stylesheet" href="./styleperfildousuario.css">
+
+</head>
+<body>
+
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#" class="active">MINHA CONTA</a></li>
+            <li><a href="#">NOTIFICAÇÕES</a></li>
+            <li><a href="#">ACESSOS</a></li>
+            <li><a href="#">SESSÕES</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </aside>
+
+    <main class="content-area">
+        
+        <div class="card profile-card">
+            <div class="avatar-container">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Cleiton Rasta">
+                <div class="status-badge"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="profile-info">
+                <h1>Cleiton Rasta</h1>
+                <div class="contact-info">
+                    <span><i class="far fa-envelope"></i> Cleiton.rasta@gmail.com</span>
+                    <span><i class="fas fa-phone-alt"></i> (27) 99960-6933</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Feu Rosa, Serra - ES</span>
+                </div>
+            </div>
+            <button class="btn-primary"><i class="fas fa-pencil-alt"></i> Editar Perfil</button>
+        </div>
+
+        <div class="card">
+            <div class="section-header">
+                <h2><i class="fas fa-exclamation-triangle"></i> Minhas Denúncias</h2>
+                <span class="badge badge-count">3 Registros</span>
+            </div>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th class="td-date">Data</th>
+                        <th class="td-info">Tipo & Local</th>
+                        <th class="td-status">Status</th>
+                        <th class="td-action"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-date">12/10/2023</td>
+                        <td class="td-info">
+                            <div class="info-title">Maus tratos</div>
+                            <div class="info-subtitle">Bairro Laranjeiras</div>
+                        </td>
+                        <td class="td-status"><span class="badge badge-analysis"><i class="fas fa-circle" style="font-size: 6px; vertical-align: middle; margin-right: 4px;"></i> Em análise</span></td>
+                        <td class="td-action"><a href="#" class="link-action">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td-date">05/09/2023</td>
+                        <td class="td-info">
+                            <div class="info-title">Abandono de filhotes</div>
+                            <div class="info-subtitle">Parque Residencial</div>
+                        </td>
+                        <td class="td-status"><span class="badge badge-forwarded"><i class="fas fa-circle" style="font-size: 6px; vertical-align: middle; margin-right: 4px;"></i> Encaminhada</span></td>
+                        <td class="td-action"><a href="#" class="link-action">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td-date">20/07/2023</td>
+                        <td class="td-info">
+                            <div class="info-title">Resgate de animal ferido</div>
+                            <div class="info-subtitle">BR 101</div>
+                        </td>
+                        <td class="td-status"><span class="badge badge-completed"><i class="fas fa-circle" style="font-size: 6px; vertical-align: middle; margin-right: 4px;"></i> Concluída</span></td>
+                        <td class="td-action"><a href="#" class="link-action">Ver Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <i class="fas fa-chevron-down expand-icon"></i>
+        </div>
+
+        <div class="grid-2-col">
+            <div class="card" style="margin-bottom: 0;">
+                <div class="section-header">
+                    <h2><i class="fas fa-briefcase-medical"></i> Serviços Veterinários</h2>
+                </div>
+                
+                <div class="service-item">
+                    <div>
+                        <div class="service-date">24/11/2024</div>
+                        <div class="service-desc">Castração</div>
+                        <a href="#" class="service-link">Visualizar Guia</a>
+                    </div>
+                    <span class="badge badge-scheduled">AGENDADO</span>
+                </div>
+
+                <div class="service-item completed">
+                    <div>
+                        <div class="service-date">10/08/2023</div>
+                        <div class="service-desc">Vacinação</div>
+                    </div>
+                    <span class="badge badge-done-gray">CONCLUÍDO</span>
+                </div>
+
+                <button class="btn-outline">Novo Agendamento</button>
+            </div>
+
+            <div class="card" style="margin-bottom: 0;">
+                <div class="section-header">
+                    <h2><i class="fas fa-dog"></i> Solicitações de Resgate</h2>
+                </div>
+
+                <div class="rescue-item">
+                    <div class="rescue-details">
+                        <h4>Animal atropelado</h4>
+                        <div class="rescue-meta">
+                            <span><i class="far fa-calendar-alt"></i> 15/10/2023</span>
+                            <span>•</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Av. Central, Laranjeiras</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-progress">Em atendimento</span>
+                </div>
+
+                <div class="rescue-item">
+                    <div class="rescue-details">
+                        <h4>Animal debilitado</h4>
+                        <div class="rescue-meta">
+                            <span><i class="far fa-calendar-alt"></i> 01/06/2023</span>
+                            <span>•</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Rua das Flores, Jacaraípe</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-completed">Concluído</span>
+                </div>
+                <i class="fas fa-chevron-down expand-icon"></i>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section-header">
+                <h2><i class="fas fa-paw"></i> Adoções em Andamento</h2>
+            </div>
+            
+            <div class="adoption-list">
+                <div class="adoption-item">
+                    <div class="adoption-profile">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=100&h=100&fit=crop" alt="Cachorro Max">
+                        <div class="adoption-info">
+                            <h4>Max</h4>
+                            <p>Cachorro, SRD</p>
+                            <div class="status-text status-orange">Status: Aguardando contato</div>
+                        </div>
+                    </div>
+                    <a href="#" class="link-action">Ver Detalhes</a>
+                </div>
+
+                <div class="adoption-item">
+                    <div class="adoption-profile">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100&h=100&fit=crop" alt="Gata Luna">
+                        <div class="adoption-info">
+                            <h4>Luna</h4>
+                            <p>Gata, Siamês</p>
+                            <div class="status-text status-green">Status: Aprovado</div>
+                        </div>
+                    </div>
+                    <a href="#" class="link-action">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
